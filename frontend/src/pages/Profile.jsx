@@ -21,7 +21,7 @@ const Profile = () => {
 
   const fetchProfile = async () => {
     try {
-      const res = await axios.get(URL + "/api/users/" + user._id)
+      const res = await axios.get( "/api/users/" + user._id)
       setUsername(res.data.username)
       setEmail(res.data.email)
       setPassword(res.data.password)
